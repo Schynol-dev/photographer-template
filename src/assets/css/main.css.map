@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../scss/main.scss",
+        "../../scss/libs/_vars.scss",
+        "../../scss/libs/_functions.scss",
+        "../../scss/libs/_mixins.scss",
+        "../../scss/libs/_vendor.scss",
+        "../../scss/libs/_breakpoints.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
