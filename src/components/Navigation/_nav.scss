@@ -1,0 +1,51 @@
+#nav {
+    cursor: default;
+    position: fixed;
+    border-bottom: solid 1px _palette(border);
+    height: 3em;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+
+    > .logo {
+
+        > h3 {
+            position: absolute;
+            left: 1em;
+            top: 0;
+            line-height: 3em - 0.5em;
+        }
+    }
+
+    > .list {
+        position: absolute;
+        right: 1em;
+        top: 0;
+        line-height: 3em;
+
+        > ul {
+
+            > li {
+                display: inline-block;
+                margin-left: 1em;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                a {
+                    text-decoration: none;
+                    display: block;
+                    padding: 0 0.5em;
+                }
+
+                &:hover {
+                    a {
+                        color: lighten(_palette(fg), 20);
+                    }
+                }
+            }
+        }
+    }
+}
