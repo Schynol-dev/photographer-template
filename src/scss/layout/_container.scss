@@ -1,0 +1,30 @@
+// Container
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1400px;
+
+    @include breakpoint('<=xlarge') {
+        width: 1200px;
+    }
+
+    @include breakpoint('<=large') {
+        width: 960px;
+    }
+
+    @include breakpoint('<=medium') {
+        width: 95%;
+    }
+
+    @include breakpoint('<=small') {
+        width: 95%;
+    }
+
+    @include breakpoint('<=xsmall') {
+        width: 90%;
+    }
+
+    @include breakpoint('<=xxsmall') {
+        width: 100%;
+    }
+}

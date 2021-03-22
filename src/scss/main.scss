@@ -1,6 +1,24 @@
 // Libs
+
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
+
+// Breakpoints.
+
+@include breakpoints((
+    xxlarge: ( 1681px,  1920px ),
+    xlarge:  ( 1281px,  1680px ),
+    large:   ( 1001px,  1280px ),
+    medium:  ( 737px,   1000px ),
+    small:   ( 481px,   736px  ),
+    xsmall:  ( null,    480px  )
+));
+
+// Base.
+
+@import 'base/reset';
+@import 'base/page';
+@import 'base/typography';

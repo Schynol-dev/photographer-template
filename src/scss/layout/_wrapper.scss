@@ -1,0 +1,18 @@
+// Wrapper
+
+.wrapper {
+    padding: 5em 0 3em 0;
+    
+    &.style1 {
+        background-color: _palette(bg);
+    }
+
+    &.style2 {
+        background-color: _palette(bg-alt);
+    }
+
+    &.style3 {
+        background-color: _palette(accent, bg);
+        color: _palette(accent, fg);
+    }
+}
