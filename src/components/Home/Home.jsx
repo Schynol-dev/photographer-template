@@ -3,7 +3,15 @@ import React from "react";
 function Home() {
 
     return (
-        <section id="home"></section>
+        <section id="home">
+            <div className="content">
+                <h2>Hello</h2>
+                <p>Welcome to Photographer a responsive site template developed by Stela</p>
+                <div className="button">
+                    <a href="#home"></a>
+                </div>
+            </div>
+        </section>
     );
 }
 

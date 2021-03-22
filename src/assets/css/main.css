@@ -453,6 +453,7 @@ p, ul, ol, dl, table {
 }
 
 #nav {
+  background-color: #ffffff;
   cursor: default;
   position: fixed;
   border-bottom: solid 1px #e5e6e7;
@@ -494,5 +495,61 @@ p, ul, ol, dl, table {
 
 #nav > .list > ul > li:hover a {
   color: #657a85;
+}
+
+#home {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../assets/images/welcome_field.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../assets/images/welcome_field.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#home > .content {
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+#home > .content > .button {
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../../assets/images/Arrow.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: solid 2px #e5e6e7;
+  border-radius: 3.5em;
+  color: inherit;
+  padding: 1.75em 1.75em;
+  margin-top: 0.75em;
+  left: calc(50% - 1.75em);
+}
+
+#home > .content > .button:hover {
+  background-color: rgba(229, 230, 231, 0.25);
+}
+
+#home > .content > .button:active {
+  background-color: rgba(229, 230, 231, 0.375);
 }
 /*# sourceMappingURL=main.css.map */
