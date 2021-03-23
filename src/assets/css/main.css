@@ -732,7 +732,7 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 }
 
 textarea {
-  min-height: 8em;
+  min-height: 16em;
 }
 
 button {
@@ -765,5 +765,9 @@ button:hover {
 
 button:active {
   background-color: #2b2b2b;
+}
+
+#footer {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
