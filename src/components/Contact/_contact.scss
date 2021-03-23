@@ -1,0 +1,82 @@
+#contact {
+
+    > .container {
+
+        > h2, p {
+            text-align: center;
+        }
+
+        > .form {
+            @include vendor('display', 'flex');
+			@include vendor('flex-wrap', 'wrap');
+            background-color: _palette(bg);
+            padding: 1.5em 1em;
+
+            > .field {
+                $space: 1em;
+                @include vendor('flex-grow', '0');
+				@include vendor('flex-shrink', '0');
+                width: 100%;
+                margin: 0  0 $space 0;
+
+                &.half {
+                    width: calc(50% - 0.5em);
+                    margin-left: 1em;
+
+                    &:first-child {
+                        margin-left: 0em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+input[type="text"], input[type="email"], textarea {
+    @include vendor('appearance', 'none');
+    @include vendor('transition', ('border-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
+    color: _palette(fg);
+    display: block;
+    width: 100%;
+    padding: 0.65em 0.75em;
+    background: none;
+    border: solid 2px lighten(_palette(accent, bg), 20);
+    border-radius: 0.5em;
+    outline: none;
+
+    &:focus {
+        border-color: _palette(accent, bg);
+    }
+}
+
+textarea {
+    min-height: 8em;
+}
+
+button {
+    @include vendor('appearance', 'none');
+	@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+    background-color: _palette(accent, bg);
+    border: 0;
+    border-radius: 0.5em;
+    color: _palette(accent, fg);
+    cursor: pointer;
+    display: inline-block;
+    height: 3.5em;
+    line-height: 3.5em;
+    outline: 0;
+    padding: 0 5em 0 5em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.75em;
+    font-family: _font(family);
+
+    &:hover {
+        background-color: lighten(_palette(accent, bg), 3);
+    }
+
+    &:active {
+        background-color: darken(_palette(accent, bg), 3);
+    }
+}

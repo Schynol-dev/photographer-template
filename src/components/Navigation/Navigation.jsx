@@ -10,10 +10,10 @@ function Navigation() {
             <div className="list">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#home">What I Do</a></li>
-                    <li><a href="#home">About Me</a></li>
-                    <li><a href="#home">My Work</a></li>
-                    <li><a href="#home">Contact</a></li>
+                    <li><a href="#do">What I Do</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#work">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
