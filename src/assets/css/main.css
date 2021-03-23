@@ -390,6 +390,7 @@ blockquote {
 }
 
 p, ul, ol, dl, table {
+  margin-top: 0.5em;
   margin-bottom: 1em;
 }
 
@@ -617,5 +618,57 @@ p, ul, ol, dl, table {
   background-color: #ffffff;
   padding: 1.5em 1em;
   width: 50%;
+}
+
+#work > .container > h2, #work > .container p {
+  text-align: center;
+}
+
+#work > .container > .photos {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#work > .container > .photos > .item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 50%;
+  max-width: 100%;
+}
+
+#work > .container > .photos > .item.one {
+  background-image: url("../../assets/images/airport.jpg");
+}
+
+#work > .container > .photos > .item.two {
+  background-image: url("../../assets/images/asia.jpg");
+}
+
+#work > .container > .photos > .item.three {
+  background-image: url("../../assets/images/cloud.jpg");
+}
+
+#work > .container > .photos > .item.four {
+  background-image: url("../../assets/images/forest.jpg");
+}
+
+#work > .container > .photos > .item.five {
+  background-image: url("../../assets/images/london.jpg");
+}
+
+#work > .container > .photos > .item.six {
+  background-image: url("../../assets/images/penguin.jpg");
+}
+
+#work > .container > .photos > .item:hover {
+  cursor: pointer;
+  opacity: 0.95;
 }
 /*# sourceMappingURL=main.css.map */

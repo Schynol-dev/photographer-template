@@ -1,0 +1,52 @@
+#work {
+    
+    > .container {
+
+        > h2, p {
+            text-align: center;
+        }
+
+        > .photos {
+            @include vendor('display', 'flex');
+            @include vendor('flex-wrap', 'wrap');
+
+            > .item {
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 50vh;
+                width: 50%;
+                max-width: 100%;
+
+                &.one {
+                    background-image: url('../../assets/images/airport.jpg');
+                }
+
+                &.two {
+                    background-image: url('../../assets/images/asia.jpg');
+                }
+
+                &.three {
+                    background-image: url('../../assets/images/cloud.jpg');
+                }
+
+                &.four {
+                    background-image: url('../../assets/images/forest.jpg');
+                }
+
+                &.five {
+                    background-image: url('../../assets/images/london.jpg');
+                }
+
+                &.six {
+                    background-image: url('../../assets/images/penguin.jpg');
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.95;
+                }
+            }
+        }
+    }
+}
