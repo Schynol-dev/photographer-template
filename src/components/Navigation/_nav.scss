@@ -49,4 +49,23 @@
             }
         }
     }
+
+    @include breakpoint('<=medium') {
+        position: absolute;
+
+        > .logo {
+            display: none;
+        }
+
+        > .list {
+            left: 1em;
+
+            > ul {
+
+                > li {
+                    margin-left: 0.25em;
+                }
+            }
+        }
+    }
 }

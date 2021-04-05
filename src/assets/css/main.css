@@ -498,6 +498,21 @@ p, ul, ol, dl, table {
   color: #657a85;
 }
 
+@media screen and (max-width: 980px) {
+  #nav {
+    position: absolute;
+  }
+  #nav > .logo {
+    display: none;
+  }
+  #nav > .list {
+    left: 1em;
+  }
+  #nav > .list > ul > li {
+    margin-left: 0.25em;
+  }
+}
+
 #home {
   display: -moz-flex;
   display: -ms-flex;
