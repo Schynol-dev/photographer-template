@@ -476,7 +476,7 @@ p, ul, ol, dl, table {
   position: absolute;
   right: 1em;
   top: 0;
-  line-height: 3em;
+  line-height: 2em;
 }
 
 #nav > .list > ul > li {
@@ -529,7 +529,7 @@ p, ul, ol, dl, table {
   color: #fff;
 }
 
-#home > .content > .button {
+#home > .content a > .button {
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
   position: absolute;
@@ -546,11 +546,11 @@ p, ul, ol, dl, table {
   left: calc(50% - 1.75em);
 }
 
-#home > .content > .button:hover {
+#home > .content a > .button:hover {
   background-color: rgba(229, 230, 231, 0.25);
 }
 
-#home > .content > .button:active {
+#home > .content a > .button:active {
   background-color: rgba(229, 230, 231, 0.375);
 }
 

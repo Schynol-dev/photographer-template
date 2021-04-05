@@ -14,7 +14,7 @@
         position: relative;
         color: #fff;
 
-        > .button {
+        a > .button {
 		    @include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
             position: absolute;
             cursor: pointer;
