@@ -23,5 +23,15 @@
                 margin-left: 50%;
             }
         }
+
+        @include breakpoint('<=medium') {
+			> .content {
+                width: 100%;
+
+                &.right {
+                    margin-left: 0;
+                }
+            }
+		}
     }
 }

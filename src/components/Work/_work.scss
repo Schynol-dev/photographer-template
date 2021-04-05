@@ -47,6 +47,13 @@
                     opacity: 0.95;
                 }
             }
+
+            @include breakpoint('<=medium') {
+                
+                > .item {
+                    width: 100%;
+                }
+            }
         }
     }
 }

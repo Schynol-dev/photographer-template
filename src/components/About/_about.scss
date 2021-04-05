@@ -16,5 +16,11 @@
             padding: 1.5em 1em;
             width: 50%;
         }
+
+        @include breakpoint('<=medium') {
+			> .content {
+                width: 100%;
+            }
+		}
     }
 }
