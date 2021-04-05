@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./assets/css/main.css";
 
 import Navigation from "./components/Navigation/Navigation";
