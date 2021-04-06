@@ -9,11 +9,11 @@ function Work() {
 
     const intersection = useIntersection(intersectionRef, {
         root: null,
-        rootMargin: '200px',
-        threshold: .3
+        rootMargin: '0px',
+        threshold: .2
     });
 
-    intersection && intersection.intersectionRatio < .3 ? fadeOut(".fade-work") : fadeIn(".fade-work");
+    intersection && intersection.intersectionRatio < .2 ? fadeOut(".fade-work") : fadeIn(".fade-work");
 
     return (
         <section ref={intersectionRef} id="work">

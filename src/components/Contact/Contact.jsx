@@ -10,10 +10,10 @@ function Contact() {
     const intersection = useIntersection(intersectionRef, {
         root: null,
         rootMargin: '0px',
-        threshold: .5
+        threshold: .2
     });
 
-    intersection && intersection.intersectionRatio < .5 ? fadeOut(".fade-contact") : fadeIn(".fade-contact");
+    intersection && intersection.intersectionRatio < .2 ? fadeOut(".fade-contact") : fadeIn(".fade-contact");
 
     return (
         <section ref={intersectionRef} id="contact" className="wrapper style2">
