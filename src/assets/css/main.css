@@ -379,6 +379,25 @@ p, ul, ol, dl, table {
   }
 }
 
+@media screen and (max-width: 736px) {
+  #nav {
+    position: absolute;
+    height: 0;
+    border-bottom: none;
+    background: transparent;
+  }
+  #nav > .logo {
+    display: none;
+  }
+  #nav > .list {
+    left: 1em;
+  }
+  #nav > .list > ul > li {
+    margin-left: 0;
+    color: #fff;
+  }
+}
+
 #home {
   display: -moz-flex;
   display: -ms-flex;

@@ -68,4 +68,27 @@
             }
         }
     }
+
+    @include breakpoint('<=small') {
+        position: absolute;
+        height: 0;
+        border-bottom: none;
+        background: transparent;
+
+        > .logo {
+            display: none;
+        }
+
+        > .list {
+            left: 1em;
+
+            > ul {
+
+                > li {
+                    margin-left: 0;
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
